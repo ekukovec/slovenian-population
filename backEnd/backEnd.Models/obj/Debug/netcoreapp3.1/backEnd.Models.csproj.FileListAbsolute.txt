@@ -1,0 +1,8 @@
+D:\Projects\Aioss\slovenian-population\backEnd\backEnd.Models\bin\Debug\netcoreapp3.1\backEnd.Models.deps.json
+D:\Projects\Aioss\slovenian-population\backEnd\backEnd.Models\bin\Debug\netcoreapp3.1\backEnd.Models.dll
+D:\Projects\Aioss\slovenian-population\backEnd\backEnd.Models\bin\Debug\netcoreapp3.1\backEnd.Models.pdb
+D:\Projects\Aioss\slovenian-population\backEnd\backEnd.Models\obj\Debug\netcoreapp3.1\backEnd.Models.AssemblyInfoInputs.cache
+D:\Projects\Aioss\slovenian-population\backEnd\backEnd.Models\obj\Debug\netcoreapp3.1\backEnd.Models.AssemblyInfo.cs
+D:\Projects\Aioss\slovenian-population\backEnd\backEnd.Models\obj\Debug\netcoreapp3.1\backEnd.Models.csproj.CoreCompileInputs.cache
+D:\Projects\Aioss\slovenian-population\backEnd\backEnd.Models\obj\Debug\netcoreapp3.1\backEnd.Models.dll
+D:\Projects\Aioss\slovenian-population\backEnd\backEnd.Models\obj\Debug\netcoreapp3.1\backEnd.Models.pdb

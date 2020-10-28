@@ -7,9 +7,10 @@ import { GetDataService } from 'src/app/_services/get-data.service';
 @Component({
   selector: 'app-slovenia',
   templateUrl: './slovenia.component.html',
-  styleUrls: ['./slovenia.component.scss']
+  styleUrls: ['./slovenia.component.scss'],
 })
 export class SloveniaComponent implements OnInit {
+  showStats: boolean = false;
 
   states: State[];
   regions: Region[];
@@ -20,21 +21,24 @@ export class SloveniaComponent implements OnInit {
   constructor(private dataService: GetDataService) { }
 
   ngOnInit(): void {
-    this.getState();
-    this.getRegion();
-    this.getCity();
+    // this.getState();
+    // this.getRegion();
+    // this.getCity();
   }
 
-  getState() {
-    this.dataService.getState().then(states => (this.states = states));
-  }
+  // getState() {
+  //   this.dataService.getState().then((states) => (this.states = states));
+  // }
 
-  getRegion() {
-    this.dataService.getRegion().then(regions => (this.regions = regions));
-  }
+  // getRegion(): void {
+  //   this.dataService.getRegion().then(regions => (this.regions = regions)).then(_ => console.log(this.regions));
+  // }
 
-  getCity() {
-    this.dataService.getCity().then(citys => (this.citys = citys));
-  }
+  // getCity() {
+  //   this.dataService.getCity().then((citys) => (this.citys = citys));
+  // }
 
+  showStat() {
+    this.showStats = !this.showStats;
+  }
 }

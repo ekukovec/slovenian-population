@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vlLTKAB+jL79IVtEtPqeo7OsS7LCCNiZf8aOLk0f4GV/1ohGQuR71DmNWfi1QTDj5ox5OIcVG1AWjiIcU7jwGw==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Aioss\\slovenian-population\\backEnd\\Helpers\\Helpers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Erik\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
+    "C:\\Users\\Erik\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

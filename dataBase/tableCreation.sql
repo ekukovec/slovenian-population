@@ -11,6 +11,7 @@ CREATE TABLE "Region"
 (
     region_id SERIAL NOT NULL,
     region_name CHARACTER VARYING(50) COLLATE pg_catalog."default" NOT NULL unique,
+	region_description TEXT,
 	state_id integer,
     CONSTRAINT region_id_pkey PRIMARY KEY (region_id),
 	CONSTRAINT state_id
@@ -25,6 +26,7 @@ CREATE TABLE "City"
     city_id SERIAL NOT NULL,
     city_name CHARACTER VARYING(50) COLLATE pg_catalog."default" NOT NULL unique,
 	city_number_of_population INTEGER NOT NULL,
+	city_description TEXT,
 	region_id integer,
     CONSTRAINT city_id_pkey PRIMARY KEY (city_id),
 	CONSTRAINT region_id

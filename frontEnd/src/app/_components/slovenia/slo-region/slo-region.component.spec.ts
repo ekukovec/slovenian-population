@@ -8,9 +8,8 @@ describe('SloRegionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SloRegionComponent ]
-    })
-    .compileComponents();
+      declarations: [SloRegionComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

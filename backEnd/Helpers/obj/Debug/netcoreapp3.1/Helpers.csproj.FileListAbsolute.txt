@@ -1,0 +1,12 @@
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\bin\Debug\netcoreapp3.1\Models.dll
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\obj\Debug\netcoreapp3.1\Helpers.csprojAssemblyReference.cache
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\obj\Debug\netcoreapp3.1\Helpers.AssemblyInfoInputs.cache
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\obj\Debug\netcoreapp3.1\Helpers.AssemblyInfo.cs
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\bin\Debug\netcoreapp3.1\Helpers.deps.json
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\bin\Debug\netcoreapp3.1\Helpers.dll
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\bin\Debug\netcoreapp3.1\Helpers.pdb
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\bin\Debug\netcoreapp3.1\Models.pdb
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\obj\Debug\netcoreapp3.1\Helpers.csproj.CoreCompileInputs.cache
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\obj\Debug\netcoreapp3.1\Helpers.csproj.CopyComplete
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\obj\Debug\netcoreapp3.1\Helpers.dll
+D:\Projects\Aioss\slovenian-population\backEnd\Helpers\obj\Debug\netcoreapp3.1\Helpers.pdb

@@ -1,0 +1,14 @@
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\bin\Debug\netcoreapp3.1\Helpers.dll
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\bin\Debug\netcoreapp3.1\Models.dll
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\obj\Debug\netcoreapp3.1\Providers.csprojAssemblyReference.cache
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\obj\Debug\netcoreapp3.1\Providers.AssemblyInfoInputs.cache
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\obj\Debug\netcoreapp3.1\Providers.AssemblyInfo.cs
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\obj\Debug\netcoreapp3.1\Providers.csproj.CoreCompileInputs.cache
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\bin\Debug\netcoreapp3.1\Providers.deps.json
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\bin\Debug\netcoreapp3.1\Providers.dll
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\bin\Debug\netcoreapp3.1\Providers.pdb
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\bin\Debug\netcoreapp3.1\Helpers.pdb
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\bin\Debug\netcoreapp3.1\Models.pdb
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\obj\Debug\netcoreapp3.1\Providers.csproj.CopyComplete
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\obj\Debug\netcoreapp3.1\Providers.dll
+D:\Projects\Aioss\slovenian-population\backEnd\Providers\obj\Debug\netcoreapp3.1\Providers.pdb

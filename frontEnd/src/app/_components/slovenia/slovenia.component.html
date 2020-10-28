@@ -1,10 +1,70 @@
 <mat-toolbar>
-    <mat-toolbar-row>
-      <span>Slovenian population</span>
-    </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span>Slovenian population</span>
+  </mat-toolbar-row>
 </mat-toolbar>
 
 <div class="container">
+  <!-- <div class="row">
+        <div class="row" style="display: none;">
+            <div class="col">
+                <mat-form-field appearance="fill">
+                    <mat-label>State</mat-label>
+                    <mat-select name="state">
+                    <mat-option *ngFor="let state of states" [value]="state.value">
+                        {{state.viewValue}}
+                    </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Region</mat-label>
+                    <mat-select name="region">
+                    <mat-option *ngFor="let region of regions" [value]="region.value">
+                        {{region.viewValue}}
+                    </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>City</mat-label>
+                    <mat-select name="city">
+                    <mat-option *ngFor="let city of citys" [value]="city.value">
+                        {{city.viewValue}}
+                    </mat-option>
+                    </mat-select>
+                </mat-form-field>                
+                <button class="showStat" mat-raised-button (click)="showStat()">Statistics</button>
+            </div>
+        </div>
+        <div class="row" *ngIf="showStats">
+            <div class="col">
+                <mat-card class="main-card">
+                    <mat-card-header>
+                        <mat-card-title>Izola</mat-card-title>
+                        <mat-card-subtitle>City</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                            <div class="col-sm">
+                                State: <h4>Slovenia</h4>     
+                            </div>
+                            <div class="col-sm">
+                                Region: <h5>Obalno-Kraško</h5> 
+                            </div>
+                            <div class="col-sm">    
+                                Population: <p>16400</p> 
+                            </div>                                
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div> -->
+  <div class="row">
+    <div class="col">
+      <app-slo-region></app-slo-region>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
     <mat-card class="main-card">
         <mat-card-header class="card-header">
             <mat-form-field appearance="fill">
@@ -36,4 +96,4 @@
             <app-slo-region></app-slo-region>
         </mat-card-content>
     </mat-card>
-</div>
+</div> -->

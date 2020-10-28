@@ -11,18 +11,13 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { SloCommuneComponent } from './_components/slovenia/slo-commune/slo-commune.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { SloRegionComponent } from './_components/slovenia/slo-region/slo-region.component';
 import { HttpClientModule } from '@angular/common/http';
- 
+import { MatDialogModule } from '@angular/material/dialog';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    SloveniaComponent,
-    SloCommuneComponent,
-    SloRegionComponent
-  ],
+  declarations: [AppComponent, SloveniaComponent, SloRegionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -34,9 +29,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatCardModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
