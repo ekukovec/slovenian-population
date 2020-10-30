@@ -4,6 +4,19 @@
   margin-bottom: 1rem;
 }
 
+.mat-toolbar-row {
+  padding: 0 0 0 1rem;
+}
+
 .row {
   text-align: center;
+}
+
+.image {
+  display: flex;
+  width: auto;
+  height: 128px;
+}
+.example-spacer {
+  flex: 1 1 auto;
 }
