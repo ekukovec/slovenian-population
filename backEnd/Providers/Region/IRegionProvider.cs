@@ -9,6 +9,5 @@ namespace Providers.Region
     public interface IRegionProvider
     {
         Task<IEnumerable<RegionModel>> GetAllRegions();
-        Task<RegionModel> GetRegionsDesc();
     }
 }

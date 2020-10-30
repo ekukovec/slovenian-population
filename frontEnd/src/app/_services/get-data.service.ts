@@ -28,17 +28,6 @@ export class GetDataService {
       .then((res) => res);
   }
 
-  getObs(): Observable<Region[]> {
-    return this.http.get<Region[]>(`${this.apiUrl}/region`);
-  }
-
-  // getRegionDesc(): Promise<Region[]> {
-  //   return this.http
-  //     .get<Region[]>(`${this.apiUrl}/region/description`)
-  //     .toPromise()
-  //     .then((res) => res);
-  // }
-
   // getCity(): Promise<City[]> {
   //   return this.http
   //     .get<City[]>(`${this.apiUrl}/city`)

@@ -1,0 +1,19 @@
+.container {
+  width: 50%;
+  display: block;
+  align-items: center;
+  margin: auto;
+}
+
+::ng-deep .mat-tooltip {
+  /* your own custom styles here */
+  /* e.g. */
+  color: black !important;
+  background-color: #ffd922;
+  text-align: center;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  vertical-align: auto;
+  opacity: 0.8;
+}

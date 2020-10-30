@@ -15,9 +15,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { SloRegionComponent } from './_components/slovenia/slo-region/slo-region.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
+import { SloCityComponent } from './_components/slovenia/slo-city/slo-city.component';
 
 @NgModule({
-  declarations: [AppComponent, SloveniaComponent, SloRegionComponent],
+  declarations: [AppComponent, SloveniaComponent, SloRegionComponent, SloCityComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

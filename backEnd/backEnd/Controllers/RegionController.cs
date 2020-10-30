@@ -38,22 +38,5 @@ namespace backEnd.Controllers
                 return StatusCode(500);
             }
         }
-
-        //GET: api/region/description -> get all the data
-        [Route("Description")]
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<RegionModel>>> GetAllRegionsDescription()
-        {
-            try
-            {
-                var regionDesc = await _regionService.GetRegions();
-                return Ok(new { RegionDesc = regionDesc });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Exception in GetAllRegions()");
-                return StatusCode(500);
-            }
-        }
     }
 }

@@ -8,16 +8,14 @@ import { GetDataService } from 'src/app/_services/get-data.service';
   styleUrls: ['./slo-region.component.scss'],
 })
 export class SloRegionComponent implements OnInit {
-
   regions: Region[];
-  heroes: Region[];
+  visi: boolean = false;
+  gettId: number;
 
   constructor(private dataService: GetDataService) { }
 
   ngOnInit(): void {
     this.getRegion();
-    this.getHeroes();
-
   }
 
   public getRegion() {
@@ -27,12 +25,11 @@ export class SloRegionComponent implements OnInit {
       .then(_ => console.log(this.regions));
   }
 
-  getHeroes(): void {
-    this.dataService.getObs()
-      .subscribe(heroes => this.heroes = heroes);
-  }
+  onClick(getId) {
+    console.log("id: " + getId);
 
-  // getRegionDesc() {
-  //   this.dataService.getRegionDesc().then((regions) => (this.regions = regions));
-  // }
+    this.gettId = this.gettId + 10;
+
+    console.log(this.gettId);
+  }
 }

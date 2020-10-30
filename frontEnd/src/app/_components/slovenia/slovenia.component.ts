@@ -1,8 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { City } from 'src/app/_models/city';
-import { Region } from 'src/app/_models/region';
-import { State } from 'src/app/_models/state';
-import { GetDataService } from 'src/app/_services/get-data.service';
 
 @Component({
   selector: 'app-slovenia',
@@ -10,35 +6,15 @@ import { GetDataService } from 'src/app/_services/get-data.service';
   styleUrls: ['./slovenia.component.scss'],
 })
 export class SloveniaComponent implements OnInit {
-  showStats: boolean = false;
+  public showReg: boolean = true;
+  public showCity: boolean = false;
 
-  states: State[];
-  regions: Region[];
-  citys: City[];
+  constructor() { }
 
-  selectedValue: string;
+  ngOnInit(): void { }
 
-  constructor(private dataService: GetDataService) { }
-
-  ngOnInit(): void {
-    // this.getState();
-    // this.getRegion();
-    // this.getCity();
-  }
-
-  // getState() {
-  //   this.dataService.getState().then((states) => (this.states = states));
-  // }
-
-  // getRegion(): void {
-  //   this.dataService.getRegion().then(regions => (this.regions = regions)).then(_ => console.log(this.regions));
-  // }
-
-  // getCity() {
-  //   this.dataService.getCity().then((citys) => (this.citys = citys));
-  // }
-
-  showStat() {
-    this.showStats = !this.showStats;
+  toggle() {
+    this.showReg = !this.showReg;
+    this.showCity = !this.showCity;
   }
 }

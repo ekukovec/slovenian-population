@@ -20,10 +20,5 @@ namespace Services.Region
         {
             return await _regionProvider.GetAllRegions();
         }
-
-        public async Task<RegionModel> GetRegionsDesc()
-        {
-            return await _regionProvider.GetRegionsDesc();
-        }
     }
 }

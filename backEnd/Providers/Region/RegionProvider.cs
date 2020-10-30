@@ -41,13 +41,5 @@ namespace Providers.Region
                 return res;
             }
         }
-
-        public async Task<RegionModel> GetRegionsDesc()
-        {
-            using (IDbConnection connection = Connection)
-            {
-                return await connection.QueryFirstAsync<RegionModel>(SQLHelper.QueryGetRegionDescription());
-            }
-        }
     }
 }

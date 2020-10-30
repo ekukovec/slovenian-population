@@ -10,9 +10,5 @@ namespace Helpers
         {
             return "SELECT * FROM public.\"Region\"";
         }
-        public static string QueryGetRegionDescription()
-        {
-            return "SELECT region_description FROM public.\"Region\"";
-        }
     }
 }

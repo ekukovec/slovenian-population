@@ -2,26 +2,26 @@
 
 /* Fill the State table */
 
-INSERT INTO "State" (state_name) VALUES ('Slovenia');   /* ID: 1 */
+INSERT INTO "State" (state_name, state_number_of_population) VALUES ('Slovenia', 2095861);   /* ID: 1 */
 
 /* Fill the Region table */
 
-INSERT INTO "Region" (region_name, state_id) VALUES ('Obalno-kraska', 1);  /* ID: 1 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Primorsko-notranjska', 1);  /* ID: 2 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Goriska', 1);  /* ID: 3 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Gorenjska', 1);  /* ID: 4 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Osrednjaslovenska', 1);  /* ID: 5 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Jugovzhodna slovenija', 1);  /* ID: 6 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Zasavska', 1);  /* ID: 7 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Posavska', 1);  /* ID: 8 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Savinjska', 1);  /* ID: 9 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Koroška', 1);  /* ID: 10 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Podravska', 1);  /* ID: 11 */
-INSERT INTO "Region" (region_name, state_id) VALUES ('Pomurska', 1);  /* ID: 12 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Obalno-kraska', 115913 , 1);  /* ID: 1 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Primorsko-notranjska', 52841 , 1);  /* ID: 2 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Goriska', 118041 , 1);  /* ID: 3 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Gorenjska', 206621 , 1);  /* ID: 4 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Osrednjaslovenska', 555274 , 1);  /* ID: 5 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Jugovzhodna slovenija', 145357 , 1);  /* ID: 6 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Zasavska', 57156 , 1);  /* ID: 7 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Posavska', 75824 , 1);  /* ID: 8 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Savinjska', 257847 , 1);  /* ID: 9 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Koroška', 70755 , 1);  /* ID: 10 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Podravska', 325994 , 1);  /* ID: 11 */
+INSERT INTO "Region" (region_name, region_number_of_population, state_id) VALUES ('Pomurska', 114238 , 1);  /* ID: 12 */
 
 /* Fill the City table */
 
-INSERT INTO "City" (city_name, city_number_of_population, region_id) VALUES ('Ankaran', '3224', 1);
+INSERT INTO "City" (city_name, city_number_of_population, region_id) VALUES ('Ankaran', 3224, 1);
 INSERT INTO "City" (city_name, city_number_of_population, region_id) VALUES ('Divača', 4213 , 1);
 INSERT INTO "City" (city_name, city_number_of_population, region_id) VALUES ('Hrpelje-Kozina', 4604 , 1);
 INSERT INTO "City" (city_name, city_number_of_population, region_id) VALUES ('Izola', 16486 , 1);

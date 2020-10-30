@@ -39,7 +39,7 @@ namespace Helpers
             {
                 {"region_id", "region_id" },
                 {"region_name", "region_name" },
-                {"region_description", "region_description" },
+                {"region_number_of_population", "region_number_of_population" },
                 {"state_id", "state_id" }
             };
 
