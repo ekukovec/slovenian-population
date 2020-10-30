@@ -1,40 +1,40 @@
 import { Component, OnInit } from '@angular/core';
-import { City } from 'src/app/_models/city';
-import { Region } from 'src/app/_models/region';
-import { State } from 'src/app/_models/state';
-import { GetDataService } from 'src/app/_services/get-data.service';
 
 @Component({
   selector: 'app-slovenia',
   templateUrl: './slovenia.component.html',
-  styleUrls: ['./slovenia.component.scss']
+  styleUrls: ['./slovenia.component.scss'],
 })
 export class SloveniaComponent implements OnInit {
+  public showReg: boolean;
+  public showCity: boolean;
 
-  states: State[];
-  regions: Region[];
-  citys: City[];
+  public btnCity: boolean;
+  public btnReg: boolean;
 
-  selectedValue: string;
-
-  constructor(private dataService: GetDataService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.getState();
-    this.getRegion();
-    this.getCity();
+    this.showReg = true;
+    this.showCity = false;
+
+    this.btnCity = true;
+    this.btnReg = false;
   }
 
-  getState() {
-    this.dataService.getState().then(states => (this.states = states));
+  toggleObcine() {
+    this.showReg = false;
+    this.showCity = true;
+
+    this.btnCity = false;
+    this.btnReg = true;
   }
 
-  getRegion() {
-    this.dataService.getRegion().then(regions => (this.regions = regions));
-  }
+  toggleRegije() {
+    this.showReg = true;
+    this.showCity = false;
 
-  getCity() {
-    this.dataService.getCity().then(citys => (this.citys = citys));
+    this.btnCity = true;
+    this.btnReg = false;
   }
-
 }

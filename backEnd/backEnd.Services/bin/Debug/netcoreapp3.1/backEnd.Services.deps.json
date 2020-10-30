@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "backEnd.Services/1.0.0": {
+        "dependencies": {
+          "backEnd.Helpers": "1.0.0",
+          "backEnd.Models": "1.0.0",
+          "backEnd.Providers": "1.0.0"
+        },
+        "runtime": {
+          "backEnd.Services.dll": {}
+        }
+      },
+      "backEnd.Helpers/1.0.0": {
+        "dependencies": {
+          "backEnd.Models": "1.0.0"
+        },
+        "runtime": {
+          "backEnd.Helpers.dll": {}
+        }
+      },
+      "backEnd.Models/1.0.0": {
+        "runtime": {
+          "backEnd.Models.dll": {}
+        }
+      },
+      "backEnd.Providers/1.0.0": {
+        "dependencies": {
+          "backEnd.Helpers": "1.0.0",
+          "backEnd.Models": "1.0.0"
+        },
+        "runtime": {
+          "backEnd.Providers.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "backEnd.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "backEnd.Helpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "backEnd.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "backEnd.Providers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

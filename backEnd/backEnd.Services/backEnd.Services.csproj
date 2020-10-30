@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\backEnd.Helpers\backEnd.Helpers.csproj" />
+    <ProjectReference Include="..\backEnd.Models\backEnd.Models.csproj" />
+    <ProjectReference Include="..\backEnd.Providers\backEnd.Providers.csproj" />
+  </ItemGroup>
+
+</Project>
