@@ -16,7 +16,6 @@ namespace Helpers
                 {"city_id", "city_id" },
                 {"city_name", "city_name" },
                 {"city_number_of_population", "city_number_of_population" },
-                {"city_description", "city_description" },
                 {"region_id", "region_id" }
             };
 
@@ -31,8 +30,6 @@ namespace Helpers
 
             return CityMap;
         }
-
-
         public static CustomPropertyTypeMap GetRegionMap()
         {
             Dictionary<string, string> columnMaps = new Dictionary<string, string>
@@ -53,6 +50,26 @@ namespace Helpers
             var RegionMap = new CustomPropertyTypeMap(typeof(RegionModel), (type, columnName) => mapper(type, columnName));
 
             return RegionMap;
+        }
+        public static CustomPropertyTypeMap GetStateMap()
+        {
+            Dictionary<string, string> columnMaps = new Dictionary<string, string>
+            {
+                {"state_id", "state_id" },
+                {"state_name", "state_name" },
+                {"state_number_of_population", "state_number_of_population" }
+            };
+
+            var mapper = new Func<Type, string, PropertyInfo>((type, columnName) =>
+            {
+                if (columnMaps.ContainsKey(columnName))
+                    return type.GetProperty(columnMaps[columnName]);
+                else
+                    return type.GetProperty(columnName);
+            });
+            var StateMap = new CustomPropertyTypeMap(typeof(StateModel), (type, columnName) => mapper(type, columnName));
+
+            return StateMap;
         }
     }
 }

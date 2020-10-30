@@ -10,5 +10,13 @@ namespace Helpers
         {
             return "SELECT * FROM public.\"Region\"";
         }
+        public static string QueryGetAllStates()
+        {
+            return "SELECT * FROM public.\"State\"";
+        }
+        public static string QueryGetAllCitys()
+        {
+            return "SELECT * FROM public.\"City\"";
+        }
     }
 }

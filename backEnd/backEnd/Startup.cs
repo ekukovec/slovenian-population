@@ -16,6 +16,9 @@ using Providers.City;
 using Services;
 using Providers.Region;
 using Services.Region;
+using Services.City;
+using Services.State;
+using Providers.State;
 
 namespace backEnd
 {
@@ -38,8 +41,13 @@ namespace backEnd
 
             //SERVICES
             services.AddScoped<IRegionService, RegionService>();
-
             services.AddScoped<IRegionProvider, RegionProvider>();
+
+            services.AddScoped<ICityService, CityService>();
+            services.AddScoped<ICityProvider, CityProvider>();
+
+            services.AddScoped<IStateService, StateService>();
+            services.AddScoped<IStateProvider, StateProvider>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

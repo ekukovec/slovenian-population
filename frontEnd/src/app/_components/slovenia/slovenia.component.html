@@ -7,7 +7,8 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <button mat-stroked-button color="primary" (click)="toggle()">Back</button>
+      <button *ngIf="btnCity" id="toggleObcine" mat-stroked-button color="primary" (click)="toggleObcine()">Pogled po obcinah</button>
+      <button *ngIf="btnReg" id="toggleRegije" mat-stroked-button color="primary" (click)="toggleRegije()">Pogled po regijah</button>
     </div>
   </div>
 </div>

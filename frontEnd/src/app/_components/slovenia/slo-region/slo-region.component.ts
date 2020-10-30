@@ -9,8 +9,6 @@ import { GetDataService } from 'src/app/_services/get-data.service';
 })
 export class SloRegionComponent implements OnInit {
   regions: Region[];
-  visi: boolean = false;
-  gettId: number;
 
   constructor(private dataService: GetDataService) { }
 
@@ -23,13 +21,5 @@ export class SloRegionComponent implements OnInit {
       .getRegion()
       .then(regions => (this.regions = regions))
       .then(_ => console.log(this.regions));
-  }
-
-  onClick(getId) {
-    console.log("id: " + getId);
-
-    this.gettId = this.gettId + 10;
-
-    console.log(this.gettId);
   }
 }

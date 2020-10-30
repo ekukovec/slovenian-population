@@ -6,15 +6,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slovenia.component.scss'],
 })
 export class SloveniaComponent implements OnInit {
-  public showReg: boolean = true;
-  public showCity: boolean = false;
+  public showReg: boolean;
+  public showCity: boolean;
+
+  public btnCity: boolean;
+  public btnReg: boolean;
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.showReg = true;
+    this.showCity = false;
 
-  toggle() {
-    this.showReg = !this.showReg;
-    this.showCity = !this.showCity;
+    this.btnCity = true;
+    this.btnReg = false;
+  }
+
+  toggleObcine() {
+    this.showReg = false;
+    this.showCity = true;
+
+    this.btnCity = false;
+    this.btnReg = true;
+  }
+
+  toggleRegije() {
+    this.showReg = true;
+    this.showCity = false;
+
+    this.btnCity = true;
+    this.btnReg = false;
   }
 }

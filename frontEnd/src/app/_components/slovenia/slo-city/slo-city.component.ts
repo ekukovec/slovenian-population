@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { City } from 'src/app/_models/city';
+import { GetDataService } from 'src/app/_services/get-data.service';
 
 @Component({
   selector: 'app-slo-city',
@@ -6,17 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slo-city.component.scss']
 })
 export class SloCityComponent implements OnInit {
-  public showReg: boolean = false;
-  public showCity: boolean = true;
+  citys: City[];
 
-  constructor() { }
+  constructor(private dataService: GetDataService) { }
 
   ngOnInit(): void {
+    this.getCity();
   }
 
-  toggle() {
-    this.showReg = !this.showReg;
-    this.showCity = !this.showCity;
+  public getCity() {
+    this.dataService
+      .getCity()
+      .then(citys => (this.citys = citys))
+      .then(_ => console.log(this.citys));
   }
-
 }

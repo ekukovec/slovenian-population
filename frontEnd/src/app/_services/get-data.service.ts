@@ -28,10 +28,10 @@ export class GetDataService {
       .then((res) => res);
   }
 
-  // getCity(): Promise<City[]> {
-  //   return this.http
-  //     .get<City[]>(`${this.apiUrl}/city`)
-  //     .toPromise()
-  //     .then((res) => res);
-  // }
+  getCity(): Promise<City[]> {
+    return this.http
+      .get<City[]>(`${this.apiUrl}/city`)
+      .toPromise()
+      .then((res) => res);
+  }
 }
