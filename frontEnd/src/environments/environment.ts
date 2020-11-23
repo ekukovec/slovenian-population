@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   baseUrl: 'https://localhost:4200/#',
   apiUrl: 'https://localhost:44303/api',
+  devUrl: 'https://aps.devcloud.si/vulcan/api/apsservice/databag'
 };
 
 /*

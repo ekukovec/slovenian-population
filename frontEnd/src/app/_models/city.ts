@@ -1,9 +1,16 @@
 import { Region } from './region';
 
 export class City {
-  city_id: number;
-  city_name: string;
-  city_number_of_population: number;
-  region_id: number;
+  CityPartyId: number;
+  PartyKey: string;
+  PartyName: string;
+  PartyFullName: string;
+  IsActive: string;
+  SerieKey: string;
+  RegionRegionId: number;
+  CountryId: number;
+  AbcCountryRegionId_PartyKey: string;
+  SerieKey_SerieName: string;
+  CountryId_CountryKey: string;
   region: Region;
 }
