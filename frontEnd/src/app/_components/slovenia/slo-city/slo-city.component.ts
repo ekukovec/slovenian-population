@@ -8,18 +8,23 @@ import { GetDataService } from 'src/app/_services/get-data.service';
   styleUrls: ['./slo-city.component.scss']
 })
 export class SloCityComponent implements OnInit {
-  citys: City[];
+  cities: City[];
 
   constructor(private dataService: GetDataService) { }
 
   ngOnInit(): void {
-    this.getCity();
+    this.getCities();
   }
-
-  public getCity() {
-    this.dataService
-      .getCity()
-      .then(citys => (this.citys = citys))
-      .then(_ => console.log(this.citys));
+  
+  public getCities() {
+    this.dataService.getCities().subscribe((data:any) => {
+      this.cities = data.Bag.Rows;
+      console.log("Printout: cities");
+      console.log(this.cities);         
+      console.log("Printout: All Given From Server");
+      console.log(data);
+    })
+    
   }
 }
+

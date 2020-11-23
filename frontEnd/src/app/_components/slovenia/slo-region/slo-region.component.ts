@@ -9,17 +9,20 @@ import { GetDataService } from 'src/app/_services/get-data.service';
 })
 export class SloRegionComponent implements OnInit {
   regions: Region[];
-
+  
   constructor(private dataService: GetDataService) { }
 
   ngOnInit(): void {
-    this.getRegion();
+    this.getRegions();
   }
 
-  public getRegion() {
-    this.dataService
-      .getRegion()
-      .then(regions => (this.regions = regions))
-      .then(_ => console.log(this.regions));
+  public getRegions() {
+    this.dataService.getRegions().subscribe((data:any) => {
+      this.regions = data.Bag.Rows;
+      console.log("Printout: Regions");
+      console.log(this.regions);         
+      console.log("Printout: All Given From Server");
+      console.log(data);         
+    });
   }
 }

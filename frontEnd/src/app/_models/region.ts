@@ -1,9 +1,11 @@
-import { State } from './state';
-
 export class Region {
-  id: number;
-  name: string;
-  number_of_population: number;
-  state_id: number;
-  state: State;
+  constructor(
+    public RegionPartyId: number,
+    public PartyKey: string,
+    public PartyName: string,
+    public PartyFullName: string,
+    public IsActive: string,
+    public SerieKey: string,
+    public CountryId: number
+  ) {}
 }
